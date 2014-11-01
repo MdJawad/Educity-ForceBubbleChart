@@ -2,10 +2,10 @@ Force Bubble Chart
 ===========
 
 Simple codebase for creation of animated force bubble chart in d3. 
-Used for the educity.sg project, but you can easily adapt this for other data.
+Used for the http://www.educity.sg/ but you can easily adapt this for other data.
 
 Demo: 
-* educity.sg/bubbleDemo/
+* http://www.educity.sg/bubbleDemo/
 
 How to use with new data:
 * get new data, save it in data folder
