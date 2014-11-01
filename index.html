@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta charset="utf-8">
+<meta name="description" content="Force Bubble Chart">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+<style>
+.checkbox-container {float:left;font-size: 13px;margin-right:5px;}
+
+circle {
+    stroke: white;
+    stroke-width: 2px;
+    opacity: .8;
+  }
+  
+.btn-group {
+margin-left: 0px;
+}
+.label {
+font-size: 12px !important;
+fill: #000;
+
+/* add white outline */
+text-shadow:
+-1px -1px 0 #FFF,
+1px -1px 0 #FFF,
+-1px 1px 0 #FFF,
+1px 1px 0 #FFF; 
+}
+
+.popover {font-size: 14px;}
+
+</style>
+</head>
+    
+<body>
+
+  <p style="padding:10px;color: grey">Here we delve into the scholarship system in a greater detail, since Public Service Commission (PSC) scholarships has been a source of talent pool for key leaders in the Singapore Government.  <a href="http://data.gov.sg/common/search.aspx?q=psc&s=default&cs=1&page=1" target="_blank">source</a></p>
+ 
+ <!-- [settings0] Edit these options to fit your new data -->
+    <div style="margin-left: 15%">
+      <label class="btn" id="type">
+        <input type="radio" name="options" checked="checked"> All
+      </label>
+      
+      <label class="btn" id="school">
+        <input type="radio" name="options"> School
+      </label>
+      
+      <label class="btn" id="ScholarshipAwarded">
+        <input type="radio" name="options"> Scholarship
+      </label>
+      
+      <label class="btn" id="Gender">
+        <input type="radio" name="options"> Gender
+      </label>
+      
+      <label class="btn" id="Course">
+        <input type="radio" name="options"> Course
+      </label>
+    </div>
+
+    <div style="margin-left: 15%"><div id="filterContainer" class="filterContainer checkbox-interaction-group"></div></div>
+
+    <div id="scholarChart"></div>
+    <script type="text/javascript" src="d3-forcebubble.js"></script>
+  </body>
+</html>
